@@ -1,0 +1,43 @@
+server:
+  servlet:
+    context-path: /notification-service/v1
+  port: 9702
+spring:
+  data:
+    redis:
+      host: 127.0.0.1
+      port: 6379
+  kafka:
+    bootstrap-servers: localhost:9093
+  application:
+    name: notification-service
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: raghupunk620@gmail.com
+    password: diepsnfyrkvpbrbp
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+logging:
+  file:
+    name: logs/application-%d{yyyy-MM-dd}.log
+  level:
+    '[com.ongraph.usermanagementapp]': info
+    '[org.springframework.web]': info
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss}- %msg%n"
+        
+ongraph:
+  authentication:
+    secretKey: ongraphSecretKey
+    tokenExpTimeInMs: 86400000
+  kafka:
+    topics:
+      registrationEmail: registrationemail
+      loginHistory: loginhistory
+    emit: true
+    

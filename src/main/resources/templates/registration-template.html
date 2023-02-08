@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Confirmation</title>
+</head>
+<body>
+<p>Dear</p> <a th:text="${name}"></a>
+<p>Thank you for showing your interest in registration with us.</p>
+<p>Please follow the link below to get onboard with us.</p>
+<p><a th:href="${registrationLink}">Activate Your Account</a></p>
+<p>Best regards,</p>
+<p>Team OnGraph</p>
+</body>
+</html>
