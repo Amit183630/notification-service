@@ -40,6 +40,7 @@ public class EmailServiceImpl implements EmailService {
 		try {
 			helper.setFrom(sender);
 			helper.setTo(details.getRecipient());
+			helper.setSubject("Registration Confirmation");
 			helper.setText(html, true);
 			javaMailSender.send(message);
 		} catch (MessagingException e) {
