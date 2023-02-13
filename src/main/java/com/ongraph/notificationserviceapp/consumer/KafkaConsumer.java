@@ -21,11 +21,10 @@ public class KafkaConsumer {
 	
     @KafkaListener(topics = "${ongraph.kafka.topics.registrationEmail}",groupId = "reg.email",
     		concurrency = "3")
-    public void listen(@Payload EmailDetails details,Acknowledgment ack,
+    public void listen(@Payload EmailDetails details, 
     		@Header(name = KafkaHeaders.OFFSET) String offset){
 		log.info("consumed data:{} on offset:{}",details,offset);
         emailService.sendRegistrationEmail(details);
-        ack.acknowledge();
     }
 
 }
