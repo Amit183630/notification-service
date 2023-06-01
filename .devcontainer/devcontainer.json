@@ -8,7 +8,7 @@
       "mavenVersion": "3.8.6",
       "installGradle": false
     },
-    "kafka": {
+    "kafka_2_localcache": {
       "install": true
     },
     "redis": {
