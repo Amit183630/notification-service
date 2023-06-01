@@ -8,7 +8,7 @@ spring:
       host: 127.0.0.1
       port: 6379
   kafka:
-    bootstrap-servers: localhost:9093
+    bootstrap-servers: localhost:9092
   application:
     name: notification-service
 logging:
