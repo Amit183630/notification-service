@@ -1,12 +1,20 @@
 {
-  "name": "Java Dev Container",
-  "dockerfile": "Dockerfile",
-  "image":"mcr.microsoft.com/vscode/devcontainers/java:17-jdk",
-  "build": {
-    "args": {
-      "RUN": "sudo apt-get update && sudo apt-get install -y openjdk-17-jdk maven kafka redis-server"
+  "name": "Java 17",
+  "image": "mcr.microsoft.com/devcontainers/java:0-17",
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "17",
+      "installMaven": true,
+      "mavenVersion": "3.8.6",
+      "installGradle": false
     }
   },
-  "workspaceFolder": "/workspaces/notification-service/",
-  "extensions": ["ms-vscode-java-debug", "ms-vscode-maven"]
+  "customizations": {
+    "vscode": {
+      "settings": {},
+      "extensions": [
+        "streetsidesoftware.code-spell-checker"
+      ]
+    }
+  }
 }
