@@ -1,4 +1,5 @@
-package com.ongraph.notificationserviceapp.controller;
+package org.jwick.notificationserviceapp.controller;
+import org.jwick.notificationserviceapp.service.EmailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.kafka.core.KafkaTemplate;
@@ -7,9 +8,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.ongraph.commonserviceapp.model.DataResponse;
-import com.ongraph.commonserviceapp.model.EmailDetails;
-import com.ongraph.notificationserviceapp.service.EmailService;
+import org.jwick.commonserviceapp.model.DataResponse;
+import org.jwick.commonserviceapp.model.EmailDetails;
 
 @RestController
 public class EmailController {

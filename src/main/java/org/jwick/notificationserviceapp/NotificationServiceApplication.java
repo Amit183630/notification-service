@@ -1,4 +1,4 @@
-package com.ongraph.notificationserviceapp;
+package org.jwick.notificationserviceapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -11,7 +11,7 @@ import org.springframework.scheduling.annotation.EnableAsync;
 @EnableAsync
 @EnableKafka
 @EnableCaching
-@ComponentScan({"com.ongraph.*","com.ongraph.commonserviceapp.model.*"})
+@ComponentScan({"org.jwick.*"})
 public class NotificationServiceApplication {
 
 	public static void main(String[] args) {

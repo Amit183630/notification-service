@@ -1,8 +1,9 @@
 // Java Program to Illustrate Creation Of
 // Service implementation class
 
-package com.ongraph.notificationserviceapp.service.impl;
+package org.jwick.notificationserviceapp.service.impl;
 
+import org.jwick.notificationserviceapp.service.EmailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.mail.javamail.JavaMailSender;
@@ -11,11 +12,10 @@ import org.springframework.stereotype.Service;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.Context;
 
-import com.ongraph.commonserviceapp.exception.CustomException;
-import com.ongraph.commonserviceapp.model.EmailDetails;
-import com.ongraph.commonserviceapp.model.ErrorCodes;
-import com.ongraph.notificationserviceapp.model.EmailTemplates;
-import com.ongraph.notificationserviceapp.service.EmailService;
+import org.jwick.commonserviceapp.exception.CustomException;
+import org.jwick.commonserviceapp.model.EmailDetails;
+import org.jwick.commonserviceapp.model.ErrorCodes;
+import org.jwick.notificationserviceapp.model.EmailTemplates;
 
 import jakarta.mail.MessagingException;
 import jakarta.mail.internet.MimeMessage;

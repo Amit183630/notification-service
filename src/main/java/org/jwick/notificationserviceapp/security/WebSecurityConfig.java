@@ -1,4 +1,4 @@
-package com.ongraph.notificationserviceapp.security;
+package org.jwick.notificationserviceapp.security;
 
 import static org.springframework.security.config.Customizer.withDefaults;
 
@@ -9,8 +9,8 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
-import com.ongraph.commonserviceapp.security.filter.AuthEntryPoint;
-import com.ongraph.commonserviceapp.security.filter.AuthTokenFilter;
+import org.jwick.commonserviceapp.security.filter.AuthEntryPoint;
+import org.jwick.commonserviceapp.security.filter.AuthTokenFilter;
 
 @Configuration
 @EnableMethodSecurity

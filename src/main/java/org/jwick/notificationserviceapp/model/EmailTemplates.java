@@ -1,4 +1,4 @@
-package com.ongraph.notificationserviceapp.model;
+package org.jwick.notificationserviceapp.model;
 
 import lombok.Getter;
 
