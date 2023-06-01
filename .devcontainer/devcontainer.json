@@ -7,15 +7,6 @@
       "installMaven": true,
       "mavenVersion": "3.8.6",
       "installGradle": false
-    },
-    "kafka_2_localcache": {
-      "install": true
-    },
-    "redis": {
-      "install": true
-    },
-    "postgresql": {
-      "install": true
     }
   },
   "customizations": {
@@ -25,5 +16,6 @@
         "streetsidesoftware.code-spell-checker"
       ]
     }
-  }
+  },
+  "postCreateCommand": "chmod +x scripts/setup.sh && bash scripts/setup.sh"
 }
