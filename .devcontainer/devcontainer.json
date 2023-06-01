@@ -7,6 +7,15 @@
       "installMaven": true,
       "mavenVersion": "3.8.6",
       "installGradle": false
+    },
+    "kafka": {
+      "install": true
+    },
+    "redis": {
+      "install": true
+    },
+    "postgresql": {
+      "install": true
     }
   },
   "customizations": {
