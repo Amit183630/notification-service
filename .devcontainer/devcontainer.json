@@ -16,5 +16,6 @@
         "streetsidesoftware.code-spell-checker"
       ]
     }
-  }
+  },
+  "postCreateCommand": "chmod +x scripts/setup.sh && bash scripts/setup.sh"
 }
