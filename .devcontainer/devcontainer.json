@@ -6,7 +6,7 @@
       "RUN": "apt-get update && apt-get install -y openjdk-17-jdk maven kafka redis-server"
     }
   },
-  "workspaceFolder": "/workspace",
+  "workspaceFolder": "/workspaces/notification-service/",
   "extensions": ["ms-vscode-java-debug", "ms-vscode-maven"],
   "settings": {
     "java.home": "${workspaceFolder}/jdk-17",
