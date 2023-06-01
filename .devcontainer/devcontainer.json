@@ -1,15 +1,12 @@
 {
   "name": "Java Dev Container",
   "dockerfile": "Dockerfile",
+  "image":"mcr.microsoft.com/vscode/devcontainers/java:17-jdk",
   "build": {
     "args": {
-      "RUN": "apt-get update && apt-get install -y openjdk-17-jdk maven kafka redis-server"
+      "RUN": "sudo apt-get update && sudo apt-get install -y openjdk-17-jdk maven kafka redis-server"
     }
   },
   "workspaceFolder": "/workspaces/notification-service/",
-  "extensions": ["ms-vscode-java-debug", "ms-vscode-maven"],
-  "settings": {
-    "java.home": "${workspaceFolder}/jdk-17",
-    "maven.executablePath": "${workspaceFolder}/mvn"
-  }
+  "extensions": ["ms-vscode-java-debug", "ms-vscode-maven"]
 }
