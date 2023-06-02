@@ -24,7 +24,7 @@ spring:
             enable: true
 logging:
   file:
-    name: logs/application-%d{yyyy-MM-dd}.log
+    name: logs/application/application-%d{yyyy-MM-dd}.log
   level:
     '[org.jwick.usermanagementapp]': info
     '[org.springframework.web]': info

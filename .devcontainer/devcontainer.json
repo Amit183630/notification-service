@@ -17,5 +17,5 @@
       ]
     }
   },
-  "postCreateCommand": "chmod +x scripts/setup.sh && bash scripts/setup.sh"
+  "postCreateCommand": "chmod +x scripts/project_setup_debian.sh && bash scripts/project_setup_debian.sh"
 }
