@@ -14,6 +14,6 @@ sudo apt-get update
 sudo apt-get install -y redis-server
 
 # Start Kafka, PostgreSQL, and Redis services
-sudo service kafka start
+source kafka-start.sh
 #sudo service postgresql start
 sudo service redis-server start
